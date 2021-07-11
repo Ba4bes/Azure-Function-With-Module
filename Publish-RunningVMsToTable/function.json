@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "Timer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */5 * * * *"
+    },
+    {
+      "tableName": "allvms",
+      "connection": "[storageaccountname]_STORAGE",
+      "name": "TableBinding",
+      "type": "table",
+      "direction": "out"
+    }
+  ]
+}
